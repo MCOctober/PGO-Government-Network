@@ -1,0 +1,304 @@
+<!-- government_website_template/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Big Goose Council Government Service Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css?family=Noto+Sans+SC:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-red-800 shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-xl font-bold text-white">Big Goose Council Government Service Platform</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-item active text-white">Home</a>
+                <a href="#leaders" class="nav-item text-white">Council Leaders</a>
+                <a href="#info" class="nav-item text-white">Information Disclosure</a>
+                <a href="#activities" class="nav-item text-white">Activities</a>
+                <a href="#news" class="nav-item text-white">News</a>
+                <a href="#about" class="nav-item text-white">About Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="hero-image">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Welcome to the Big Goose Council Government Service Platform</h1>
+                <p class="text-xl md:text-2xl mb-8 text-white">Efficient & Convenient · Open & Transparent · Serving the People</p>
+                
+                <div class="mt-4 flex justify-center">
+                    <a href="#news" class="bg-white text-red-800 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition">News</a>
+                </div>
+                
+                <!-- This part is a historical legacy, now using class="mt-XXX" for spacing, but I can't bear to delete it, so it's left here-->
+                    
+                    <!-- Spacing legacy code    
+                    <div> <p> -</p> </div>
+                    Spacing legacy code -->    
+                
+                <div class="mt-7">
+                    <a href="https://my.xiguacity.cn/study/196976085/612ca205ce54f22671745ee3/index.html" class="bg-white text-red-800 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition">Old Website (Current PGO Information Network)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Council Leaders -->
+        <section id="leaders" class="section bg-red-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-red-800">Council Leaders</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">President: MB_Bread</h3>
+                            <!-- <center><img src="PIC/TESTPIC.png" /></center> -->
+                            <p class="text-gray-600 mt-2">Responsible for the overall work of the Council, presiding over the daily operations, and overseeing personnel, finance, and other key areas.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">Vice President: AiAi</h3>
+                            <!-- <center><img src="PIC/TESTPIC2.png" /></center> -->
+                            <p class="text-gray-600 mt-2">Assists the President with daily affairs, overseeing education, culture, health, and related areas.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">Minister of Military Affairs: WuGui</h3>
+                            <p class="text-gray-600 mt-2">Responsible for military security affairs, overseeing national defense, security, emergency management, and related areas.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">Minister of Health: NanGuae</h3>
+                            <p class="text-gray-600 mt-2">Responsible for the health and well-being of key Council leaders.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">Chief Judge: NanGuae</h3>
+                            <p class="text-gray-600 mt-2">Responsible for personally adjudicating serious disputes in court and overseeing organizational discipline.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="text-center p-6">
+                            <h3 class="text-xl font-bold text-red-800">Minister of Travel: MB_Bread</h3>
+                            <p class="text-gray-600 mt-2">Responsible for arranging travel for members and planning itineraries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Disclosure -->
+        <section id="info" class="section bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-red-800">Information Disclosure</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-6 p-4 border-b border-gray-200">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">2025 Goose People's Congress Meeting / Election Results</h3>
+                        <a href="https://xg9.cn/my/NQQa8x" class="text-blue-600 hover:underline">View Details</a>
+                    </div>
+                    <div class="mb-6 p-4 border-b border-gray-200">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">None at the moment</h3>
+                        <a href="#home" class="text-blue-600 hover:underline">Back to Home</a>
+                    </div>
+                    <div class="mb-6 p-4 border-b border-gray-200">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">None at the moment</h3>
+                        <a href="#home" class="text-blue-600 hover:underline">Back to Home</a>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold text-red-800 mb-4">Contact Information</h3>
+                        <p class="text-gray-700 mb-2">Tel: 0739 735 5543</p>
+                        <p class="text-gray-700 mb-2">QQ: 3550942220</p>
+                        <p class="text-gray-700">Email: 3550942220@qq.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Display -->
+        <section id="activities" class="section bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-red-800">Recent Activities</h2>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <thead>
+                            <tr class="bg-red-800 text-white">
+                                <th class="p-3">Date</th>
+                                <th class="p-3">Activity Name</th>
+                                <th class="p-3">Location</th>
+                                <th class="p-3" style="width: 85px;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white">
+                                <td class="p-3">2023.9</td>
+                                <td class="p-3">2023 Goose People's Congress</td>
+                                <td class="p-3">Big Goose Council Sky Base 1, 2, 3, 4 (all now decommissioned), Big Goose Council Meeting Hall, Chengbu Miao Autonomous County</td>
+                                <td class="p-3">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-3">2025.4</td>
+                                <td class="p-3">Big Goose Little Goose Dash Forward 2025 Season 1</td>
+                                <td class="p-3">PGO Chengbu Stadium</td>
+                                <td class="p-3">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-3">2025.7.20~2025.7.24</td>
+                                <td class="p-3">2025 Goose People's Congress</td>
+                                <td class="p-3">PGO Changde Sanjiangkou Meeting Room</td>
+                                <td class="p-3">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-3">2025.8.9~8.11</td>
+                                <td class="p-3">2025 Big Goose Little Goose Dash Forward - Season 2</td>
+                                <td class="p-3">PGO Chengbu Sports Dual Venues (PGO Goose People's Government Main Gymnasium (Old Hall), Erfen Metro Station Gymnasium (New Hall))</td>
+                                <td class="p-3">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-3">2026.2.16 (New Year's Eve)</td>
+                                <td class="p-3">2026 PGO Spring Festival Gala</td>
+                                <td class="p-3">PGO Goose People's Government Auditorium (Living Room)</td>
+                                <td class="p-3">
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-sm">In Preparation</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section id="news" class="section bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-red-800">News</h2>
+                <div class="max-w-3xl mx-auto">
+                    <h3 class="text-xl font-bold mb-1 text-red-800">New Member Joins</h3>
+                    <p class="mb-2 text-gray-700">On January 11, 2026, a new member excitedly joined the PGO family.</p>
+                    <p class="mb-2 text-gray-700">MaoE stated, "The addition of new members, I don't see as a threat. PGO is a perfect socialist, altruistic council; new friends only bring happiness."</p>
+                    <p class="mb-2 text-gray-700">(For details, see official QQ - 3550942220)</p>
+                    <h3 class="mb-5 text-gray-700"> </h3>
+                    
+                    <h3 class="text-xl font-bold mb-1 text-red-800">Vice President AiAi Delivers 2026 New Year's Message</h3>
+                    <p class="mb-2 text-gray-700">On January 1, 2026, Vice President AiAi delivered the 2026 New Year's message.</p>
+                    <p class="mb-2 text-gray-700">AiAi sincerely expressed New Year wishes to everyone!</p>
+                    <p class="mb-2 text-gray-700">(For details, see official QQ - 3550942220)</p>
+                    <h3 class="mb-5 text-gray-700"> </h3>
+
+                    <h3 class="text-xl font-bold mb-1 text-red-800">2025 Goose People's Congress Concludes Successfully</h3>
+                    <p class="mb-2 text-gray-700">The 2025 Goose People's Congress was held in Shimen County, Hunan Province.</p>
+                    <p class="mb-2 text-gray-700">On July 24, 2025, President MB Bread announced the successful conclusion of the meeting in the 4F venue.</p>
+                    <p class="mb-2 text-gray-700">This session elected a new Vice President, Minister of Military Affairs, etc., and voted on more than ten proposals, making it an unprecedented meeting.</p>
+                    <p class="mb-2 text-gray-700">For more information and voting results, see Information Disclosure.</p>
+                    <p><a href="#info" class="mb-7 text-blue-600 hover:underline">Information Disclosure</a></p>
+                    <p class="mb-2 text-gray-700"> </p>
+                    
+                    <h3 class="text-xl font-bold mb-2 text-red-800">PGO Hainan Visit Activity Concludes Successfully</h3>
+                    <p class="mb-2 text-gray-700">Recently, Big Goose Council members AiAi and JiaoHua participated in a study tour in Hainan. They have now returned safely.</p>
+                    <p class="mb-2 text-gray-700">The most exciting part was the rocket launch viewing activity in Wenchang, Hainan.</p>
+                    <p class="mb-2 text-gray-700">Reporter MB_Bread captured the moment of the rocket launch; the video is on the PGO official QQ feed.</p>
+                    <hr>
+                    <center>
+                        <p class="mb-3 text-gray-700">Members' Reflections on the Viewing</p>
+                    </center>
+                    <p class="mb-2 text-gray-700">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This was my first time seeing a rocket launch up close. Everyone has seen it online, but being there in person was much more astonishing – a completely different feeling! A firsthand experience is truly different; you must go see it!
+                    </p>
+                    <p style="text-align : right" class="mb-2 text-gray-700">———AiAi (Vice President)</p>
+
+                    <p class="mb-2 text-gray-700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hehe! If I hadn't seen it with my own eyes, I wouldn't have believed that rockets could be both so massive and so small.</p>
+                    <p style="text-align : right" class="mb-2 text-gray-700">———JiaoHua (Member)</p>
+                
+                    <p class="mb-2 text-gray-700"> </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="section bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-red-800">About Us</h2>
+                <div class="max-w-3xl mx-auto">
+                    <h3 class="text-xl font-bold mb-4 text-red-800">Big Goose Council Introduction</h3>
+                    <p class="text-gray-700 mb-4">The Big Goose Council is a comprehensive government service platform created for the Goose People, aiming to provide convenient and efficient government services.</p>
+                    <p class="text-gray-700 mb-4">The platform integrates government service resources from various departments, enabling "one-stop processing," letting data travel more and Goose People run less.</p>
+                    <p class="text-gray-700 mb-4">You can also call 0739-7355543 to contact the Big Goose Council e-Technology Customer Service for various online services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-red-900">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Contact Information</h3>
+                    <p class="text-gray-300">Tel: 0739 735 5543</p>
+                    <p class="text-gray-300">QQ: 3550942220 (Big Goose Council Official)</p>
+                    <p class="text-gray-300">Email: 3550942220@qq.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white">Home</a></li>
+                        <li><a href="#leaders" class="text-gray-300 hover:text-white">Council Leaders</a></li>
+                        <li><a href="#info" class="text-gray-300 hover:text-white">Information Disclosure</a></li>
+                        <li><a href="#activities" class="text-gray-300 hover:text-white">Activities</a></li>
+                        <li><a href="#news" class="text-gray-300 hover:text-white">News</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Follow Us</h4>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAALmrxkjubLAv0H_C3MSmcY0tNUDdDWD52qPERMmqDUJEm02X_pvTPe_hFHy0BOBES?from_tab_name=main"
+                            class="text-gray-300 hover:text-white text-xl"> Douyin: PGO_Start2023</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://xg9.cn/my/xJpx2p"
+                            class="text-gray-300 hover:text-white text-xl"> Want to play mini-games online? Check here! (Made by official staff!)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-red-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Big Goose Council Government Service Platform All Rights Reserved · Assisted by haisnap</p>
+                <p>© July 19, 2025</p>
+                <p>The website URL may change at any time. Please pay attention to the official account's latest information immediately!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
